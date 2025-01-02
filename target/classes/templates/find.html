@@ -74,26 +74,22 @@
 <body>
     <div class="container">
         <h1>Поиск пользователя</h1>
-        <!-- Форма для поиска -->
         <form action="/users/findUser" method="get">
-            <label for="username">Имя пользователя:</label>
+            <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-            <button type="submit">Найти</button>
+            <button type="submit">Find</button>
         </form>
 
-        <!-- Если пользователь найден, показываем его данные -->
         <div class="result" th:if="${user != null}">
-            <h2>Результат поиска:</h2>
-            <p><strong>Имя:</strong> <span th:text="${user.username}"></span></p>
-            <p><strong>Пароль:</strong> <span th:text="${user.password}"></span></p>
+            <h2>Result:</h2>
+            <p><strong>Username:</strong> <span th:text="${user.username}"></span></p>
+            <p><strong>Password:</strong> <span th:text="${user.password}"></span></p>
         </div>
 
-        <!-- Если ошибка, показываем сообщение -->
         <div class="error" th:if="${errorMessage != null}">
             <p th:text="${errorMessage}"></p>
         </div>
 
-        <!-- Кнопка назад -->
         <a href="/" class="button">Назад</a>
     </div>
 </body>

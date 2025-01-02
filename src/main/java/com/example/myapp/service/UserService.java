@@ -27,9 +27,8 @@ public class UserService {
     }
 
     public List<User> getAllUsers() {
-        List<User> users = userRepository.findAll(); // Получаем всех пользователей
+        List<User> users = userRepository.findAll();
         if (users.isEmpty()) {
-            // Если пользователей нет, возвращаем пустой список
             return users;
         }
         return users;

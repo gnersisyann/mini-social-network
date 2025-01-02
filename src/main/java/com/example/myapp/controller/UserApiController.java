@@ -26,6 +26,6 @@ public class UserApiController {
 
     @GetMapping
     public List<User> getAllUsers() {
-        return userService.getAllUsers(); // Предположим, что есть метод в сервисе, который возвращает список всех пользователей
+        return userService.getAllUsers();
     }
 }

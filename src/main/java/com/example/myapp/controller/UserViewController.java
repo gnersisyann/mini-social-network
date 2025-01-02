@@ -8,34 +8,34 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.ui.Model;
 
-@Controller // Указывает, что это контроллер для HTML-шаблонов
+@Controller
 @RequestMapping("/users")
 public class UserViewController {
 
     @Autowired
-    private UserService userService; // Экземпляр сервиса, который будет использоваться для вызова методов
+    private UserService userService;
 
     @GetMapping("/register")
     public String showRegisterForm() {
-        return "register"; // Возвращает шаблон register.html из папки templates
+        return "register";
     }
 
     @GetMapping("/find")
     public String showFindForm() {
-        return "find"; // Возвращает шаблон find.html из папки templates
+        return "find";
     }
 
     @GetMapping("/findUser")
     public String findUser(String username, Model model) {
-        // Ищем пользователя по имени
+        
         User user = userService.findUserByUsername(username);
         
         if (user != null) {
-            model.addAttribute("user", user); // Передаем найденного пользователя в модель
+            model.addAttribute("user", user);
         } else {
             model.addAttribute("errorMessage", "Пользователь не найден");
         }
         
-        return "find"; // Возвращаем тот же шаблон, где отобразим пользователя или сообщение об ошибке
+        return "find";
     }
 }
