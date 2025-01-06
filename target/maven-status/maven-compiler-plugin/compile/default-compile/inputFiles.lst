@@ -1,0 +1,10 @@
+/home/letto/Desktop/repo/src/main/java/com/miniapp/service/MyUserDetailsService.java
+/home/letto/Desktop/repo/src/main/java/com/miniapp/controller/AuthController.java
+/home/letto/Desktop/repo/src/main/java/com/miniapp/controller/HomeController.java
+/home/letto/Desktop/repo/src/main/java/com/miniapp/controller/ErrorController.java
+/home/letto/Desktop/repo/src/main/java/com/miniapp/model/User.java
+/home/letto/Desktop/repo/src/main/java/com/miniapp/service/UserService.java
+/home/letto/Desktop/repo/src/main/java/com/miniapp/controller/UserController.java
+/home/letto/Desktop/repo/src/main/java/com/miniapp/Application.java
+/home/letto/Desktop/repo/src/main/java/com/miniapp/repository/UserRepository.java
+/home/letto/Desktop/repo/src/main/java/com/miniapp/config/SecurityConfig.java

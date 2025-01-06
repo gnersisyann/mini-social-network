@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Welcome to the Application</h1>
+
+    <div class="auth-status">
+        <p th:if="${user != null}">
+            Authorized <span style="color: green;">✔️</span>
+        </p>
+        <p th:if="${user == null}">
+            Not Authorized <span style="color: red;">❌</span>
+        </p>
+    </div>
+
+    <div class="button-container">
+        <a th:if="${user != null}" href="/logout" class="button">Log Out</a>
+        <a th:if="${user == null}" href="/register" class="button">Register</a>
+        <a th:if="${user != null}" href="/users" class="button">Show User List</a>
+        <a th:if="${user == null}" href="/login" class="button">Log In</a>
+    </div>
+</body>
+</html> 
