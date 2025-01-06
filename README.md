@@ -2,10 +2,9 @@
 
 This is a mini social network project that allows users to:
 
-- Create personal profiles
-- Follow other users and gain followers
-- Post content and view their posts
-- Search and find users by username
+- Create accounts
+- Show user list
+- Log in/Log out
 
 ## Features
 
@@ -24,11 +23,20 @@ This is a mini social network project that allows users to:
    ```bash
    cd mini-social-network
 3. Make sure you have Java 8 or above installed.
-4. Build and run the project using Maven:
+4. Set up PostgreSQL:  
+   - Install PostgreSQL if you don’t have it installed.  
+   - Create a new PostgreSQL user `admin` with the password `0000`.  
+   - Create a database named `app_db`. Use the following commands:  
+     ```sql
+     CREATE USER admin WITH PASSWORD '0000';
+     CREATE DATABASE app_db;
+     GRANT ALL PRIVILEGES ON DATABASE app_db TO admin;
+     ```
+6. Build and run the project using Maven:
    ```bash
    mvn clean install
    mvn spring-boot:run
-5. Open your browser and go to:
+7. Open your browser and go to:
    http://localhost:8080
 
 # Future Features
