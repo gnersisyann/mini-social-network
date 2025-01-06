@@ -6,14 +6,6 @@ This is a mini social network project that allows users to:
 - Show user list
 - Log in/Log out
 
-## Features
-
-- **User Registration**: Users can register with a username and password.
-- **Profile**: Each user has a profile with their username and password (additional profile features will be added soon).
-- **Followers & Following**: Users can follow other users and be followed in return.
-- **Post Creation**: Users can create posts that will appear in their profiles.
-- **User Search**: Find users by their username.
-
 ## Getting Started
 
 1. Clone the repository:
@@ -44,6 +36,10 @@ This is a mini social network project that allows users to:
   - **News feed: Display posts from users you follow.**
   - **Liking and commenting on posts.**
   - **Private messaging between users.**
+  - **Profile**: Each user has a profile with their username and password (additional profile features will be added soon).
+  - **Followers & Following**: Users can follow other users and be followed in return.
+  - **Post Creation**: Users can create posts that will appear in their profiles.
+  - **User Search**: Find users by their username.
 
 # Contributing
 
